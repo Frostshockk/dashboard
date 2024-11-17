@@ -15,6 +15,7 @@ class Task(models.Model):
     description = models.TextField(blank = True, null= True)
     created_at = models.DateTimeField(auto_now_add=True)
     column = models.ForeignKey(Column, related_name='tasks', on_delete=models.CASCADE)
+    order = models.PositiveIntegerField(default=0)
 
     def __str__(self):
         return self.title
