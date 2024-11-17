@@ -7,6 +7,8 @@ class ColumnSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class TaskSerializer(serializers.ModelSerializer):
+    column = serializers.PrimaryKeyRelatedField(queryset=Column.objects.all())
+
     class Meta:
         model = Task
-        fields = '__all__'
+        fields = ['id', 'title', 'description', 'column', 'order']
