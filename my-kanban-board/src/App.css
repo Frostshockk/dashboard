@@ -1,0 +1,33 @@
+.board {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.columns-container {
+  display: flex;
+}
+
+.column {
+  width: 30%;
+  margin-right: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.column h3 {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.tasks {
+  margin-top: 20px;
+}
+
+.task {
+  background-color: #f1f1f1;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
