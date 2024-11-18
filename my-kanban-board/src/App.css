@@ -1,3 +1,33 @@
+:root[data-theme="light"] {
+  --background-color: #fafafa;
+}
+
+:root[data-theme="dark"] {
+  --background-color: #2b3e51;
+
+  .task p{
+    color: aqua;
+  }
+  .task h4{
+    color: aqua;
+  }
+  h1{
+    color: aqua;
+  }
+  p{
+    color: aqua;
+  }
+
+.board p{
+  color: aqua;
+  }
+  .column h3{
+    color: aqua;
+    }
+}
+
+  
+
 .board {
   display: flex;
   justify-content: space-around;
@@ -21,13 +51,4 @@
   font-size: 1.2em;
 }
 
-.tasks {
-  margin-top: 20px;
-}
 
-.task {
-  background-color: #f1f1f1;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 4px;
-}
