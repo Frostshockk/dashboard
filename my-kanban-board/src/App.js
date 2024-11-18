@@ -8,7 +8,7 @@ function App() {
   return (
     <DndProvider backend={HTML5Backend}>
       <div className="App">
-        <h1>Task Tree Manager</h1>
+        <h1>TaskBoard Manager</h1>
         <p>by Kirill Gorokhov!</p>
         <Board />
       </div>
